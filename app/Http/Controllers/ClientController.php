@@ -97,7 +97,7 @@ class ClientController extends Controller
 
         return view('client/form', $data);
     }
-    public function modify( Request $request, $client_id, $client)
+    public function modify( Request $request, $client_id, Client $client)
     {
         $data = [];
 
